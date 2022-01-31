@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    overflow: hidden;
+    background-image: url('../images/footer_bg.jpeg');
+    background-size: cover;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.footer h1 {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.footer-content {
+    line-height: 25px;
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    margin: 2% 25% 3% 10%;
+}
+
+.footer-content .contact {
+    align-content: space-between;
+    width: 50%;
+    text-align: left;
+}
+
+.footer .contact-links a {
+    color: white;
+    padding: 5px;
+    display: block;
+}
+
+.footer .contact-links a:hover {
+    color: burlywood;
+}
+
+.footer-content .form {
+    align-content: space-between;
+    width: 50%;
+    text-align: left;
+} 
+
+.footer-content .form input {
+    display: block;
+    background: transparent;
+    border-color: white;
+    border-radius: 10px;
+    line-height: 25px;
+    width: 70%;
+    margin: 3% 0;
+    caret-color: white;
+    color: white;
+    padding-left: 2%;
+}
+
+.footer-content .form input::placeholder {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-content .form textarea {
+    display: block;
+    background: transparent;
+    border-color: white;
+    border-radius: 10px;
+    line-height: 50px;
+    width: 70%;
+    margin: 2% 0;
+    caret-color: white;
+    color: white;
+    padding-left: 4%;
+}
+
+.footer-content .form textarea::placeholder {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 4%;
+}
+
+.footer-content .form .send {
+    background: url('../images/footer_bg.jpeg');
+    color: white;
+    width: 70%;
+    font-size: medium;
+    padding: 2%;
+    border-radius: 50px;
+    border-width: 0;
+    margin-top: 2%;
+}
+
+.footer .copyright {
+    font-size: small;
+}
+
+@media screen and (max-width: 900px){
+    .footer-content {
+        line-height: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: medium;
+    }
+    
+    .footer-content .contact {
+        align-content: space-between;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer-content .form {
+        align-content: space-between;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer-content .form input {
+        width: 80%;
+    }
+
+    .footer-content .form textarea {
+        width: 80%;
+    }
+
+    .footer-content .form .send {
+        width: 80%;
+    }
+}

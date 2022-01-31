@@ -1,0 +1,156 @@
+.container .profile .profile_image img {
+    width: 60%;
+}
+
+.container .profile {
+    background-image: url('../images/home.jpeg');
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+}
+
+.container .profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.container .profile .profile_image {
+    align-content: space-between;
+    width: 40%;
+    text-align: left;
+    margin: 2% 0 0 10%;
+}
+
+.container .profile .profile_details {
+    align-content: space-between;
+    width: 60%;
+    text-align: left;
+    color: white;
+    font-size: medium;
+    margin-top: 3%;
+}
+
+.container .profile .profile_details .profile_intro h2{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.container .profile .profile_details .profile_info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.container .profile .profile_details .profile_info .title {
+    align-content: space-between;
+    width: 20%;
+    text-align: left;
+    line-height: 30px;
+}
+
+.container .profile .profile_details .profile_info .title ul {
+    list-style-type: none;
+    padding: 0;
+    color: lightsteelblue;
+}
+
+.container .profile .profile_details .profile_info .details {
+    align-content: space-between;
+    width: 80%;
+    text-align: left;
+    line-height: 30px;
+}
+
+.container .profile .profile_details .profile_info .details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container .profile .profile_details .social_links a{
+    padding-right: 15px;
+    color: lightsteelblue;
+}
+
+.container .profile .profile_details .social_links i {
+    font-size: 35px;
+}
+
+.container .profile .profile_details .social_links a:hover{
+    color: white;
+}
+
+.container .introduction {
+    color: #505050;
+    padding: 1% 25% 1% 10%;
+    margin: 2% 0;
+}
+
+.container .introduction .cv {
+    background-color: #5D3FD3;
+    color: white;
+    font-size: medium;
+    padding: 1% 2% 1% 2%;
+    border-radius: 50px;
+    border-width: 0;
+    margin-top: 2%;
+}
+
+.container .introduction .cv:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width:720px) and (max-width: 1080px) {
+
+    .container .profile {
+        background-size: 100%;
+    }
+
+    .container .profile .profile_image img {
+        width: 80%;
+    }
+
+    .container .profile .profile_details .social_links i {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .container .profile .profile_image img {
+        width: 60%;
+    }
+
+    .container .profile {
+        background-image: url('../images/home.jpeg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .container .profile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container .profile .profile_image {
+        align-content: space-between;
+        width: 100%;
+        text-align: left;
+        margin: 20px 0 0 50px;
+    }
+    
+    .container .profile .profile_details {
+        align-content: space-between;
+        width: 100%;
+        text-align: left;
+        color: white;
+        font-size: medium;
+        margin-left: 50px;
+    }
+
+    .container .profile .profile_details .social_links{
+        padding-bottom: 20px;
+    }
+
+    .container .profile .profile_details .social_links i {
+        font-size: 30px;
+    }
+}
